@@ -1,0 +1,16 @@
+{
+  "name": "amf-test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node --inspect=localhost:9229 dist/app/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "active-module-framework": "file:local_modules/active-module-framework"
+  }
+}

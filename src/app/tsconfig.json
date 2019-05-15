@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": { "*": ["types/*"] },
+		"target": "es2017",
+		"module": "commonjs",
+		"outDir": "../../dist/app/",
+		"declaration": false,
+		"sourceMap": true,
+		"inlineSources": true
+	}
+}
