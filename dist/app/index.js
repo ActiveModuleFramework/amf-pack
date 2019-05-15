@@ -1,16 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const amf = require("active-module-framework");
+const path = require("path");
 new amf.Manager({
     remotePath: '/',
     execPath: '/',
-    rootPath: 'dist/public',
-    indexPath: 'src/template/index.html',
+    indexPath: path.resolve(__dirname, '../template/index.html'),
+    rootPath: path.resolve(__dirname, '../public'),
     cssPath: ['css'],
     jsPath: ['js'],
-    localDBPath: 'dist/db/app.db',
-    modulePath: 'dist/app/modules',
-    jsPriority: ['jsw.js'],
+    localDBPath: path.resolve(__dirname, '../db/app.db'),
+    modulePath: path.resolve(__dirname, './modules'),
+    jsPriority: [],
     debug: true,
     listen: 8080 //受付ポート/UNIXドメインソケット
     //listen:'dist/sock/app.sock'
