@@ -10,8 +10,10 @@ new amf.Manager({
 	jsPath: ['js'],											//一般コンテンツのローカルパス
 	localDBPath: path.resolve(__dirname, '../db/app.db'),	//ローカルDBパス
 	modulePath: path.resolve(__dirname, './modules'),		//モジュール配置パス
-	jsPriority: [],											//優先JSファイル設定
+	jsPriority: ['jwf.js'],									//優先JSファイル設定
 	debug: true,											//デバッグ用メッセージ出力
+	listened:(port)=>{},									//受付準備完了後のコールバック
 	listen: 8080											//受付ポート/UNIXドメインソケット
 	//listen:'dist/sock/app.sock'
+
 })
