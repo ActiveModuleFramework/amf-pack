@@ -12,4 +12,10 @@
 			"dom"
 		]
 	},
+	"references": [
+		{
+			"path": "../../../local_modules/active-module-framework/src"
+		}
+	]
+
 }
