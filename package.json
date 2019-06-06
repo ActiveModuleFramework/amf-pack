@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --inspect=localhost:9229 dist/app/index.js"
+    "start": "node --inspect=localhost:9229 dist/app/index.js",
+    "build-app": "tsc -b",
+    "watch-app": "tsc -b -w",
+    "build-public": "webpack -b",
+    "watch-public": "webpack -b -w"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +18,21 @@
     "active-module-framework": "file:local_modules/active-module-framework"
   },
   "devDependencies": {
-    "javascript-window-framework": "0.0.13"
+    "@types/capture-console": "^1.0.0",
+    "@types/express": "^4.17.0",
+    "@types/sprintf": "^0.1.0",
+    "@types/uuid": "^3.4.4",
+    "css-loader": "^2.1.1",
+    "dts-bundle": "^0.7.3",
+    "javascript-window-framework": "0.0.13",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "url-loader": "^2.0.0",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.2"
   }
 }
