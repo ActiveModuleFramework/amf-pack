@@ -11,9 +11,8 @@ new amf.Manager({
     jsPath: ['js'],
     localDBPath: path.resolve(__dirname, '../db/app.db'),
     modulePath: path.resolve(__dirname, './modules'),
-    jsPriority: ['jwf.js'],
+    jsPriority: [],
     debug: true,
-    listened: (port) => { },
     listen: 8080 //受付ポート/UNIXドメインソケット
     //listen:'dist/sock/app.sock'
 });
