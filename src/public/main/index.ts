@@ -1,7 +1,6 @@
-///<reference path="../../../dist/public/js/jwf.d.ts"/>
-
 //ページ読み込み時に実行する処理を設定
 addEventListener("DOMContentLoaded", ()=>{new Test()})
+//import * as JWF from "JWF";
 
 class Test{
 	//通信アダプタの作成
@@ -32,7 +31,7 @@ class Test{
 		window.setSize(300, 100)
 		window.setPos(20, 80)
 		const client = window.getClient()
-		const result = await this.adapter.exec('TestModule.countSession')
+		const result = await this.adapter.exec('TestModule.countSession') as number[]
 		//結果を書き込む
 		client.textContent = `グローバル:${result[0]} + セッション:${result[1]}`
 	}
@@ -58,7 +57,7 @@ class Test{
 			//サーバにデータを送信し、受信完了まで待つ
 			const result = await this.adapter.exec('TestModule.add', a, b)
 			//結果を書き込む
-			nodes[3].textContent = result
+			nodes[3].textContent = result as string
 		})
 	}
 

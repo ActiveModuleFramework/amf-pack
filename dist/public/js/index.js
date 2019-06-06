@@ -36,6 +36,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 ///<reference path="../../../dist/public/js/jwf.d.ts"/>
 //ページ読み込み時に実行する処理を設定
 addEventListener("DOMContentLoaded", function () { new Test(); });
+//import * as JWF from "JWF";
+var JWF;
 var Test = /** @class */ (function () {
     function Test() {
         //通信アダプタの作成
@@ -80,9 +82,7 @@ var Test = /** @class */ (function () {
                         window.setSize(300, 100);
                         window.setPos(20, 80);
                         client = window.getClient();
-                        return [4 /*yield*/, this.adapter.exec('TestModule.countSession')
-                            //結果を書き込む
-                        ];
+                        return [4 /*yield*/, this.adapter.exec('TestModule.countSession')];
                     case 1:
                         result = _a.sent();
                         //結果を書き込む
