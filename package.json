@@ -24,7 +24,7 @@
     "@types/uuid": "^3.4.4",
     "css-loader": "^2.1.1",
     "dts-bundle": "^0.7.3",
-    "javascript-window-framework": "0.0.13",
+    "javascript-window-framework": "0.0.14",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.4",
