@@ -12,6 +12,7 @@ new amf.Manager({
     localDBPath: path.resolve(__dirname, "../db/app.db"),
     modulePath: path.resolve(__dirname, "./modules"),
     jsPriority: [],
+    cluster: -1,
     debug: true,
     listen: 8080 //受付ポート/UNIXドメインソケット
     //listen:'dist/sock/app.sock'
